@@ -5,7 +5,7 @@
 #you may have to change values due to login
 
 #---------------------------Start--------------------------------
-
+import time
 from selenium import webdriver
 
 driver = webdriver.Chrome()
@@ -20,40 +20,42 @@ passwordbox = driver.find_element_by_xpath('//*[@id="login"]/input[6]')
 loginbutton = driver.find_element_by_xpath('//*[@id="login"]/input[7]')
 
 #Login Actions
-usernamebox.send_keys('###')
-passwordbox.send_keys('###')
+usernamebox.send_keys('xxx')
+passwordbox.send_keys('xxx')
 loginbutton.click()
+time.sleep(5)
 
-time.sleep(8)
 #---------------------------------------------------------------------
 #Automation Selection
 
-#Slection Values
 ptcheck = driver.find_element_by_xpath('//*[@id="maincontent"]/div[1]/div[2]/form/input[2]')
+ptcheck.click()
 ptsubmit = driver.find_element_by_xpath('//*[@id="maincontent"]/div[1]/div[2]/form/input[3]')
+ptsubmit.click()
+time.sleep(5)
+
+
 hhtcheck = driver.find_element_by_xpath('//*[@id="maincontent"]/div[2]/div[2]/form/input[2]')
+hhtcheck.click()
 hhtsubmit = driver.find_element_by_xpath('//*[@id="maincontent"]/div[2]/div[2]/form/input[3]')
+hhtsubmit.click()
+time.sleep(5)
+
 rtcheck = driver.find_element_by_xpath('//*[@id="maincontent"]/div[3]/div[2]/form/input[2]')
+rtcheck.click()
 rtsubmit = driver.find_element_by_xpath('//*[@id="maincontent"]/div[3]/div[2]/form/input[3]')
+rtsubmit.click()
+time.sleep(5)
+
 wmcheck = driver.find_element_by_xpath('//*[@id="maincontent"]/div[4]/div[2]/form/input[2]')
 wmsubmit = driver.find_element_by_xpath('//*[@id="maincontent"]/div[4]/div[2]/form/input[3]')
-
-
-
-
-#Slection Actions
-ptcheck.click()
-#ptsubmit.click()
-hhtcheck.click()
-#hhtsubmit.click()
-rtcheck.click()
-#rtsubmit.click()
 wmcheck.click()
-#wmsubmit.click()
+wmsubmit.click()
+time.sleep(5)
 
 #---------------------------------------------------------------------
 #Logout
 
 logout = driver.find_element_by_xpath('//*[@id="expand_section"]/h2/a')
-#logout.click()
+logout.click()
 
