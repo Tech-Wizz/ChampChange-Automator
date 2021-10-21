@@ -20,10 +20,11 @@ passwordbox = driver.find_element_by_xpath('//*[@id="login"]/input[6]')
 loginbutton = driver.find_element_by_xpath('//*[@id="login"]/input[7]')
 
 #Login Actions
-usernamebox.send_keys('xxx')
-passwordbox.send_keys('xxx')
+usernamebox.send_keys('XXX')
+passwordbox.send_keys('XXX')
 loginbutton.click()
 time.sleep(5)
+
 
 #---------------------------------------------------------------------
 #Automation Selection
@@ -58,4 +59,5 @@ time.sleep(5)
 
 logout = driver.find_element_by_xpath('//*[@id="expand_section"]/h2/a')
 logout.click()
+driver.close()
 
