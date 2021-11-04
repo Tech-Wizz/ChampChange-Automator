@@ -1,6 +1,7 @@
 # ChampChange-Automator
 This is a test for the automation on MSU websites 
 
+This program is powered by selenium and uses a web driver for Google Chrome. YouTube links are provided to help set you up to run this program.
 
 Automate it in computer
 Click on Start Windows, search for Task Scheduler, and open it.
